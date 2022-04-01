@@ -70,7 +70,7 @@ body{
         margin-bottom: 27px ;
         overflow-x: scroll;
     }   
-    .conteudo_geral > div > div{
+    .container_comida{
 
         display: flex;
         justify-content: center;
@@ -80,9 +80,31 @@ body{
         height: 216px;
         background-color: #FFFFFF;
         margin-left: 19px;
-        
+        border-radius: 9px;
+        position: relative;
 
     }
+    .ativo{
+        border: 4px solid #32B72F;
+        border-radius: 4px;
+
+    }
+    .icone{
+        bottom: 2px;
+        right: 5px;
+        position: absolute;
+        display: none;
+
+    }
+   
+   
+    ion-icon{
+        color:  #32B72F;
+        font-size: 20px;
+     
+
+    }
+
     .comidas{
         display: flex;
         flex-direction: column;
@@ -124,6 +146,7 @@ body{
     position: fixed;
     bottom: 0px;
     background-color:#FFFFFF;
+    z-index: 1;
     }
     .inferior_cinza{
     height: 61px;
@@ -144,7 +167,7 @@ body{
         align-items: center;
         justify-content: center;
         padding: 0 70px;
-        display: none;
+       
    
         }
     .container_inferior > div > p{
@@ -161,4 +184,10 @@ body{
  
     strong{
         font-weight: bold;
+    }
+    .escondido {
+        display: none;
+    }
+    .relativo{
+        position:initial;
     }
