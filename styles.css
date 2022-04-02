@@ -1,143 +1,135 @@
-
-body{
-    font-family: 'Encode Sans', sans-serif;
-    font-family: 'Righteous', cursive;
-    font-family: 'Roboto', sans-serif;
+body {
+    font-family: "Encode Sans", sans-serif;
+    font-family: "Righteous", cursive;
+    font-family: "Roboto", sans-serif;
     background-color: #e5e5e5;
-}
-*{
+  }
+  * {
     box-sizing: border-box;
-}
-.imagens{
+  }
+  .imagens {
     width: 144px;
     height: 87px;
     border-radius: 4px;
-}
-.container_topo{
+  }
+  .container_topo {
     width: 100%;
     height: 92px;
-    background-color: #CF2B2B;
+    background-color: #cf2b2b;
     display: flex;
     align-items: center;
     position: fixed;
     top: 0;
     z-index: 1;
-
-}
-.container_topo > div{
+  }
+  .container_topo > div {
     margin-left: 21px;
-}
-.container_topo > div >h1{
+  }
+  .container_topo > div > h1 {
     font-family: Righteous;
     font-size: 44px;
     font-style: normal;
     font-weight: 400;
     line-height: 55px;
     letter-spacing: -0.012em;
-    color: #FFFFFF;
-
-    
-}
-/*O correto é margin-top 123px  */
-.conteudo_geral{
+    color: #ffffff;
+  }
+  /*O correto é margin-top 123px  */
+  .conteudo_geral {
     margin-top: 123px;
     margin-bottom: 108px;
-}
-.container_topo > div> h2{
-    font-family: 'Roboto';
+  }
+  .container_topo > div > h2 {
+    font-family: "Roboto";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
-    color: #FFFFFF;
-    }
-    .conteudo_geral h1{
-        font-family: 'Righteous';
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 32px;
-        letter-spacing: 0.018em;
-        color:#333333;
-        margin-left: 19px;
-
-
-    }
-    .conteudo_geral > div{
-        margin-top: 17px;
-        display: flex;
-        align-items: center;
-        margin-bottom: 27px ;
-        overflow-x: scroll;
-    }   
-    .container_comida{
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 172px;
-        height: 216px;
-        background-color: #FFFFFF;
-        margin-left: 19px;
-        border-radius: 9px;
-        position: relative;
-
-    }
-    .ativo{
-        border: 4px solid #32B72F;
-        border-radius: 4px;
-
-    }
-    .icone{
-        bottom: 2px;
-        right: 5px;
-        position: absolute;
-        display: none;
-
-    }
-   
-   
-    ion-icon{
-        color:  #32B72F;
-        font-size: 20px;
-     
-
-    }
-
-    .comidas{
-        display: flex;
-        flex-direction: column;
-        padding-left: 15px;
-        padding-right: 13px;
-     
-    }
-    .nome_comida{
-        font-family: Roboto;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 19px;
-        margin-top: 8px;
-        color: #333333;
-
-    }
-    .descrição_comida{
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-        line-height: 18px;
-        color: #A6A6A6;
-        margin-top: 4px;
-    }
-    .preço{
-        font-family: Roboto;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 19px;
-        margin-top: 5px;
-        color: #000000;
-    }
-    .container_inferior{
+    color: #ffffff;
+  }
+  .conteudo_geral h1 {
+    font-family: "Righteous";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    color: #333333;
+    margin-left: 19px;
+  }
+  .conteudo_geral > div {
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+    overflow-x: scroll;
+  }
+  .container_comida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 172px;
+    height: 216px;
+    background-color: #ffffff;
+    margin-left: 19px;
+    border-radius: 9px;
+    position: relative;
+  }
+  .ativo {
+    border: 4px solid #32b72f;
+    border-radius: 4px;
+  }
+  /* .escolhido_bebida {
+    border: 4px solid #32b72f;
+    border-radius: 4px;
+  }
+  .escolhido_sobremesa {
+    border: 4px solid #32b72f;
+    border-radius: 4px;
+  } */
+  .icone {
+    bottom: 2px;
+    right: 5px;
+    position: absolute;
+  }
+  
+  ion-icon {
+    color: #32b72f;
+    font-size: 20px;
+  }
+  
+  .comidas {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 13px;
+  }
+  .nome_comida {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-top: 8px;
+    color: #333333;
+  }
+  .descrição_comida {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    color: #a6a6a6;
+    margin-top: 4px;
+  }
+  .preço {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-top: 5px;
+    color: #000000;
+  }
+  .container_inferior {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,49 +137,48 @@ body{
     height: 92px;
     position: fixed;
     bottom: 0px;
-    background-color:#FFFFFF;
+    background-color: #ffffff;
     z-index: 1;
-    }
-    .inferior_cinza{
+  }
+  .inferior_cinza {
     height: 61px;
     width: 364px;
     border-radius: 50px;
-    background-color:#CBCBCB;
+    background-color: #cbcbcb;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 70px;
-    }
-    .inferior_verde{
-        height: 61px;
-        width: 364px;
-        border-radius: 50px;
-        background-color: #32B72F;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 70px;
-       
-   
-        }
-    .container_inferior > div > p{
-        font-family: Roboto;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 23px;
-        letter-spacing: 0.018em;
-        color: #FFFFFF;
-        text-align: center;
-
-    }
- 
-    strong{
-        font-weight: bold;
-    }
-    .escondido {
-        display: none;
-    }
-    .relativo{
-        position:initial;
-    }
+  }
+  .inferior_verde {
+    height: 61px;
+    width: 364px;
+    border-radius: 50px;
+    background-color: #32b72f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 70px;
+    display: none;
+  }
+  .container_inferior > div > p {
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.018em;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  .escondido {
+    display: none;
+  }
+  .relativo {
+    position: initial;
+  }
+  

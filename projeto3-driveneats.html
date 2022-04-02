@@ -1,162 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DrivenEats</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container_topo">
-        <div>
-            <h1>
-                DrivenEats
-            </h1>
-            <h2>
-                Sua comida em 6 minutos
-            </h2>
-        </div>
+      <div>
+        <h1>
+          DrivenEats
+        </h1>
+        <h2>
+          Sua comida em 6 minutos
+        </h2>
+      </div>
     </div>
     <div class="container_inferior">
-        <div class="inferior_cinza">
-            <p>
-                    Selecione os 3 itens  para fechar o pedido
-            </p>
-        </div>
-        <div class="inferior_verde escondido">
-            <p>
-                    Fechar Pedido
-            </p>
-        </div>
+      <div class="inferior_cinza">
+        <p>
+          Selecione os 3 itens para fechar o pedido
+        </p>
+      </div>
+      <div class="inferior_verde">
+        <p>
+          Fechar Pedido
+        </p>
+      </div>
     </div>
     <div class="conteudo_geral">
-        <h1>
-            <strong>
-            Primeiro, seu prato
+      <h1>
+        <strong>
+          Primeiro, seu prato
         </strong>
-         </h1>
-        <div class="pratos">
-            <div onclick="escolherprato(this)" class="container_comida " >
-                <div class="icone">
-                 <ion-icon  name="checkmark-circle"></ion-icon>
-                    
-                </div>
-                <div class="comidas">
-                    <img class="imagens" src="/Imagens/frango_yin_yang 1.png" alt="">
-                    <h2 class="nome_comida">
-                        Frango Yin Yang
-                    </h2>
-                    <h4 class="descrição_comida">
-                        Um pouco de batata, um pouco de salada
-                    </h4>
-                    <p class="preço">
-                        R$ 14,90
-                    </p>
-                  
-                 </div>
-            </div>
-            <div onclick="escolherprato(this)" class="container_comida " >
-                <div class="icone">
-                    <ion-icon  name="checkmark-circle"></ion-icon>
-                </div>
-                <div class="comidas">
-                    <img class="imagens" src="/Imagens/frango_yin_yang 1.png" alt="">
-                    <h2 class="nome_comida">
-                        Frango Yin Yang
-                    </h2>
-                    <h4 class="descrição_comida">
-                        Um pouco de batata, um pouco de salada
-                    </h4>
-                    <p class="preço">
-                        R$ 14,90
-                    </p>
-                  
-                 </div>
-            </div>
-    
+      </h1>
+      <div class="pratos">
+        <div onclick="escolherprato(this)" class="container_comida">
+          <div class="icone"></div>
+          <div class="comidas">
+            <img class="imagens" src="/Imagens/frango_yin_yang 1.png" alt="" />
+            <h2 class="nome_comida">
+              Frango Yin Yang
+            </h2>
+            <h4 class="descrição_comida">
+              Um pouco de batata, um pouco de salada
+            </h4>
+            <p class="preço">
+              R$ 14,90
+            </p>
+          </div>
         </div>
-        <h1>
-            <strong>
-            Agora, sua bebida
-        </strong>
-         </h1>
-         <div class="bebidas">
-            <div onclick="escolherbebida(this)" class="container_comida">
-                <div class="comidas">
-                    <img class="imagens" src="/Imagens/coquinha_gelada 1.png" alt="">
-                    <h2 class="nome_comida">
-                        Coquinha gelada
-                    </h2>
-                    <h4 class="descrição_comida">
-                        Lata 350ml
-                    </h4>
-                    <p class="preço">
-                        R$ 4,90
-                    </p>
-                </div>
-            </div>
-            <div onclick="escolherbebida(this)" class="container_comida">
-                <div class="comidas">
-                    <img class="imagens" src="/Imagens/coquinha_gelada 1.png" alt="">
-                    <h2 class="nome_comida">
-                        Coquinha gelada
-                    </h2>
-                    <h4 class="descrição_comida">
-                        Lata 350ml
-                    </h4>
-                    <p class="preço">
-                        R$ 4,90
-                    </p>
-                </div>
-            </div>
-
-      
-         </div>
-        <h1>
-            <strong>
-                Por fim, sua sobremesa
-        </strong>
-         </h1>
-        <div class="sobremesa">
-            <div onclick="escolhersobremesa(this)" class="container_comida">
-                <div class="comidas">
-                        <img class="imagens" src="/Imagens/pudim 1.png" alt="">
-                        <h2 class="nome_comida">
-                            Pudim
-                        </h2>
-                        <h4 class="descrição_comida">
-                            Apenas pudim
-                        </h4>
-                        <p class="preço">
-                            R$ 7,90
-                        </p>
-                </div>
-            </div>
-            <div onclick="escolhersobremesa(this)" class="container_comida">
-                <div class="comidas">
-                        <img class="imagens" src="/Imagens/pudim 1.png" alt="">
-                        <h2 class="nome_comida">
-                            Pudim
-                        </h2>
-                        <h4 class="descrição_comida">
-                            Apenas pudim
-                        </h4>
-                        <p class="preço">
-                            R$ 7,90
-                        </p>
-                </div>
-            </div>
-           
-    
+        <div onclick="escolherprato(this)" class="container_comida">
+          <div class="icone"></div>
+          <div class="comidas">
+            <img class="imagens" src="/Imagens/frango_yin_yang 1.png" alt="" />
+            <h2 class="nome_comida">
+              Macarrão
+            </h2>
+            <h4 class="descrição_comida">
+              Um pouco de batata, um pouco de salada
+            </h4>
+            <p class="preço">
+              R$ 14,90
+            </p>
+          </div>
         </div>
-      </div>  
-      <script src="scripts.js"></script>
-      <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-</body>
-
+      </div>
+      <h1>
+        <strong>
+          Agora, sua bebida
+        </strong>
+      </h1>
+      <div class="bebidas">
+        <div onclick="escolherbebida(this)" class="container_comida">
+          <div class="comidas">
+            <div class="icone"></div>
+            <img class="imagens" src="/Imagens/coquinha_gelada 1.png" alt="" />
+            <h2 class="nome_comida">
+              Coquinha gelada
+            </h2>
+            <h4 class="descrição_comida">
+              Lata 350ml
+            </h4>
+            <p class="preço">
+              R$ 4,90
+            </p>
+          </div>
+        </div>
+        <div onclick="escolherbebida(this)" class="container_comida">
+          <div class="comidas">
+            <div class="icone"></div>
+            <img class="imagens" src="/Imagens/coquinha_gelada 1.png" alt="" />
+            <h2 class="nome_comida">
+              Coquinha gelada
+            </h2>
+            <h4 class="descrição_comida">
+              Lata 350ml
+            </h4>
+            <p class="preço">
+              R$ 4,90
+            </p>
+          </div>
+        </div>
+      </div>
+      <h1>
+        <strong>
+          Por fim, sua sobremesa
+        </strong>
+      </h1>
+      <div class="sobremesas">
+        <div onclick="escolhersobremesa(this)" class="container_comida">
+          <div class="comidas">
+            <div class="icone"></div>
+            <img class="imagens" src="/Imagens/pudim 1.png" alt="" />
+            <h2 class="nome_comida">
+              Pudim
+            </h2>
+            <h4 class="descrição_comida">
+              Apenas pudim
+            </h4>
+            <p class="preço">
+              R$ 7,90
+            </p>
+          </div>
+        </div>
+        <div onclick="escolhersobremesa(this)" class="container_comida">
+          <div class="comidas">
+            <div class="icone"></div>
+            <img class="imagens" src="/Imagens/pudim 1.png" alt="" />
+            <h2 class="nome_comida">
+              Pudim
+            </h2>
+            <h4 class="descrição_comida">
+              Apenas pudim
+            </h4>
+            <p class="preço">
+              R$ 7,90
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </body>
 </html>
