@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DrivenEats</title>
+    <title> </title>
   </head>
   <body>
     <div class="container_topo">
@@ -31,12 +31,13 @@
           Selecione os 3 itens para fechar o pedido
         </p>
       </div>
-      <div class="inferior_verde">
-        <p>
-          Fechar Pedido
-        </p>
-      </div>
-    </div>
+          <div class="inferior_verde" onclick="fecharpedido()">
+            <p>
+              Fechar Pedido
+            </p>
+          </div>
+        </div>
+      
     <div class="conteudo_geral">
       <h1>
         <strong>
@@ -47,30 +48,105 @@
         <div onclick="escolherprato(this)" class="container_comida">
           <div class="icone"></div>
           <div class="comidas">
-            <img class="imagens" src="/Imagens/frango_yin_yang 1.png" alt="" />
+            <img class="imagens" src="/Imagens/Big_Barulhos.png" alt="" />
             <h2 class="nome_comida">
-              Frango Yin Yang
+              Big Barulhos
             </h2>
             <h4 class="descrição_comida">
-              Um pouco de batata, um pouco de salada
+              Pão, salada, frango desfiado e queijo
             </h4>
             <p class="preço">
-              R$ 14,90
+              R$ 27,00
             </p>
           </div>
         </div>
         <div onclick="escolherprato(this)" class="container_comida">
           <div class="icone"></div>
           <div class="comidas">
-            <img class="imagens" src="/Imagens/frango_yin_yang 1.png" alt="" />
+            <img class="imagens" src="/Imagens/Frangulhos.png " alt="" />
             <h2 class="nome_comida">
-              Macarrão
+              Frangulhos
             </h2>
             <h4 class="descrição_comida">
-              Um pouco de batata, um pouco de salada
+              Pão, milho, frango desfiado e queijo
             </h4>
             <p class="preço">
-              R$ 14,90
+              R$ 22,00
+            </p>
+          </div>
+        </div>
+        <div onclick="escolherprato(this)" class="container_comida">
+          <div class="icone"></div>
+          <div class="comidas">
+            <img class="imagens" src="/Imagens/Australian_Burguer.png" alt="" />
+            <h2 class="nome_comida">
+              Australian Burguer
+            </h2>
+            <h4 class="descrição_comida">
+              Pão australi,120g de picanha e barbecue
+            </h4>
+            <p class="preço">
+              R$ 29,00
+            </p>
+          </div>
+        </div>
+        <div onclick="escolherprato(this)" class="container_comida">
+          <div class="icone"></div>
+          <div class="comidas">
+            <img class="imagens" src="/Imagens/File_tropical.png" alt="" />
+            <h2 class="nome_comida">
+              Filé Tropical
+            </h2>
+            <h4 class="descrição_comida">
+              Pão árabe, queijo Gruyere, filé e abacaxi
+            </h4>
+            <p class="preço">
+              R$ 24,00
+            </p>
+          </div>
+        </div>
+        <div onclick="escolherprato(this)" class="container_comida">
+          <div class="icone"></div>
+          <div class="comidas">
+            <img class="imagens" src="/Imagens/Wrap_Frango.png" alt="" />
+            <h2 class="nome_comida">
+              Wrap Frango
+            </h2>
+            <h4 class="descrição_comida">
+              Delicioso pão folha recheado com frango
+            </h4>
+            <p class="preço">
+              R$ 24,00
+            </p>
+          </div>
+        </div>
+        <div onclick="escolherprato(this)" class="container_comida">
+          <div class="icone"></div>
+          <div class="comidas">
+            <img class="imagens" src="/Imagens/Frango_com_provolone.png" alt="" />
+            <h2 class="nome_comida">
+              Frango com provolone
+            </h2>
+            <h4 class="descrição_comida">
+              Pão croissant, salada, frango ao catupiry
+            </h4>
+            <p class="preço">
+              R$ 26,00
+            </p>
+          </div>
+        </div>
+        <div onclick="escolherprato(this)" class="container_comida">
+          <div class="icone"></div>
+          <div class="comidas">
+            <img class="imagens" src="/Imagens/File_com_provolone.png" alt="" />
+            <h2 class="nome_comida">
+              Filé com provolone
+            </h2>
+            <h4 class="descrição_comida">
+              Pão croissant, salada, filé ao catupiry
+            </h4>
+            <p class="preço">
+              R$ 29,00
             </p>
           </div>
         </div>
@@ -111,6 +187,96 @@
             </p>
           </div>
         </div>
+        <div onclick="escolherbebida(this)" class="container_comida">
+          <div class="comidas">
+            <div class="icone"></div>
+            <img class="imagens" src="/Imagens/coquinha_gelada 1.png" alt="" />
+            <h2 class="nome_comida">
+              Coquinha gelada
+            </h2>
+            <h4 class="descrição_comida">
+              Lata 350ml
+            </h4>
+            <p class="preço">
+              R$ 4,90
+            </p>
+          </div>
+        </div>
+        <div onclick="escolherbebida(this)" class="container_comida">
+          <div class="comidas">
+            <div class="icone"></div>
+            <img class="imagens" src="/Imagens/coquinha_gelada 1.png" alt="" />
+            <h2 class="nome_comida">
+              Coquinha gelada
+            </h2>
+            <h4 class="descrição_comida">
+              Lata 350ml
+            </h4>
+            <p class="preço">
+              R$ 4,90
+            </p>
+          </div>
+        </div>
+        <div onclick="escolherbebida(this)" class="container_comida">
+          <div class="comidas">
+            <div class="icone"></div>
+            <img class="imagens" src="/Imagens/coquinha_gelada 1.png" alt="" />
+            <h2 class="nome_comida">
+              Coquinha gelada
+            </h2>
+            <h4 class="descrição_comida">
+              Lata 350ml
+            </h4>
+            <p class="preço">
+              R$ 4,90
+            </p>
+          </div>
+        </div>
+        <div onclick="escolherbebida(this)" class="container_comida">
+          <div class="comidas">
+            <div class="icone"></div>
+            <img class="imagens" src="/Imagens/coquinha_gelada 1.png" alt="" />
+            <h2 class="nome_comida">
+              Coquinha gelada
+            </h2>
+            <h4 class="descrição_comida">
+              Lata 350ml
+            </h4>
+            <p class="preço">
+              R$ 4,90
+            </p>
+          </div>
+        </div>
+        <div onclick="escolherbebida(this)" class="container_comida">
+          <div class="comidas">
+            <div class="icone"></div>
+            <img class="imagens" src="/Imagens/coquinha_gelada 1.png" alt="" />
+            <h2 class="nome_comida">
+              Coquinha gelada
+            </h2>
+            <h4 class="descrição_comida">
+              Lata 350ml
+            </h4>
+            <p class="preço">
+              R$ 4,90
+            </p>
+          </div>
+        </div>
+        <div onclick="escolherbebida(this)" class="container_comida">
+          <div class="comidas">
+            <div class="icone"></div>
+            <img class="imagens" src="/Imagens/coquinha_gelada 1.png" alt="" />
+            <h2 class="nome_comida">
+              Coquinha gelada
+            </h2>
+            <h4 class="descrição_comida">
+              Lata 350ml
+            </h4>
+            <p class="preço">
+              R$ 4,90
+            </p>
+          </div>
+        </div>
       </div>
       <h1>
         <strong>
@@ -118,6 +284,96 @@
         </strong>
       </h1>
       <div class="sobremesas">
+        <div onclick="escolhersobremesa(this)" class="container_comida">
+          <div class="comidas">
+            <div class="icone"></div>
+            <img class="imagens" src="/Imagens/pudim 1.png" alt="" />
+            <h2 class="nome_comida">
+              Pudim
+            </h2>
+            <h4 class="descrição_comida">
+              Apenas pudim
+            </h4>
+            <p class="preço">
+              R$ 7,90
+            </p>
+          </div>
+        </div>
+        <div onclick="escolhersobremesa(this)" class="container_comida">
+          <div class="comidas">
+            <div class="icone"></div>
+            <img class="imagens" src="/Imagens/pudim 1.png" alt="" />
+            <h2 class="nome_comida">
+              Pudim
+            </h2>
+            <h4 class="descrição_comida">
+              Apenas pudim
+            </h4>
+            <p class="preço">
+              R$ 7,90
+            </p>
+          </div>
+        </div>
+        <div onclick="escolhersobremesa(this)" class="container_comida">
+          <div class="comidas">
+            <div class="icone"></div>
+            <img class="imagens" src="/Imagens/pudim 1.png" alt="" />
+            <h2 class="nome_comida">
+              Pudim
+            </h2>
+            <h4 class="descrição_comida">
+              Apenas pudim
+            </h4>
+            <p class="preço">
+              R$ 7,90
+            </p>
+          </div>
+        </div>
+        <div onclick="escolhersobremesa(this)" class="container_comida">
+          <div class="comidas">
+            <div class="icone"></div>
+            <img class="imagens" src="/Imagens/pudim 1.png" alt="" />
+            <h2 class="nome_comida">
+              Pudim
+            </h2>
+            <h4 class="descrição_comida">
+              Apenas pudim
+            </h4>
+            <p class="preço">
+              R$ 7,90
+            </p>
+          </div>
+        </div>
+        <div onclick="escolhersobremesa(this)" class="container_comida">
+          <div class="comidas">
+            <div class="icone"></div>
+            <img class="imagens" src="/Imagens/pudim 1.png" alt="" />
+            <h2 class="nome_comida">
+              Pudim
+            </h2>
+            <h4 class="descrição_comida">
+              Apenas pudim
+            </h4>
+            <p class="preço">
+              R$ 7,90
+            </p>
+          </div>
+        </div>
+        <div onclick="escolhersobremesa(this)" class="container_comida">
+          <div class="comidas">
+            <div class="icone"></div>
+            <img class="imagens" src="/Imagens/pudim 1.png" alt="" />
+            <h2 class="nome_comida">
+              Pudim
+            </h2>
+            <h4 class="descrição_comida">
+              Apenas pudim
+            </h4>
+            <p class="preço">
+              R$ 7,90
+            </p>
+          </div>
+        </div>
         <div onclick="escolhersobremesa(this)" class="container_comida">
           <div class="comidas">
             <div class="icone"></div>
