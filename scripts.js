@@ -158,12 +158,13 @@ function atualizarValor() {
       let endereço = prompt ("Qual é o seu endereço?")
       mensagem =   `Olá, gostaria de fazer o pedido: \n - Prato: ${prato} \n - Bebida: ${bebida} \n - Sobremesa: ${sobremesa} \n Total: R$ ${precofinal} \n \n Nome: ${nomex} \n Endereço: ${endereço}`
       let mensagemenconded = encodeURIComponent(mensagem);
-      alert (mensagem)
-      window.open (`https://wa.me/+5583991005321?text=${mensagemenconded}`,'_blank');
+      window.open (`https://wa.me/+5583999216606?text=${mensagemenconded}`,'_blank');
   }
   function confirmarpedido( ) {
    const confirmar_pedido= document.querySelector(".container_confirmar")
+   const fundo= document.querySelector(".fundo_branco")
    confirmar_pedido.style.display="flex"
+   fundo.style.display="initial"
    const pratox = document.querySelector('.prato_ok')
    const preçoprato = document.querySelector('.preço_prato_ok')
    pratox.innerHTML= prato
@@ -190,4 +191,6 @@ function atualizarValor() {
 function cancelar( ) {
     const confirmar_pedido= document.querySelector(".container_confirmar")
     confirmar_pedido.style.display="none"
+    const fundo= document.querySelector(".fundo_branco")
+    fundo.style.display="none"
  }
